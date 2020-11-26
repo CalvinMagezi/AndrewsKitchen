@@ -195,20 +195,33 @@ min-height: 100%;
   margin: 0;
 }
 
-#header .pause-play{
-  background:none;
-  font: 16px;
-  border: none;
-  background:none;
-  color: #fff;
-  border-radius: 5px;
-  transition: 0.2s;
-  margin-right: 10px;
-  border: 1px solid #E74C3C;
+/* Pause Play Button */
+.pause-play {
+  margin-left: 25px;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 6px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 13px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid#E74C3C;
+  background-color: #000;
 }
 
-#header .pause-play:hover{
-  color:#E74C3C;
+.pause-play:hover {
+  background: #E74C3C;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .pause-play {
+    margin: 0 48px 0 0;
+    padding: 6px 18px;
+  }
 }
 
 #header .get-started{
